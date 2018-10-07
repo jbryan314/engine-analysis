@@ -1,0 +1,23 @@
+from src.model.components.element import Element
+from src.model.ports import FluidInputPort, FluidOutputPort
+
+
+class Inlet(Element):
+
+    """ Engine inlet """
+
+    def __init__(self):
+        super().__init__()
+        # attributes
+        # ports
+        self.Fl_I = FluidInputPort()
+        self.Fl_O = FluidOutputPort()
+
+    def read_in(self):
+        pass
+
+    def calculate(self):
+        pass
+
+    def read_out(self):
+        pass
