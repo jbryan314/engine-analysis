@@ -1,4 +1,4 @@
-from src.model.components.element import Element
+from src.model.elements.element import Element
 from src.model.ports import FluidInputPort, FluidOutputPort, ShaftOutputPort
 
 

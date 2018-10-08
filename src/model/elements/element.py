@@ -27,4 +27,4 @@ class Element:
         self.read_in()
         self.calculate()
         self.read_out()
-        # TODO: tell all downstream linked components to run
+        # TODO: tell all downstream linked elements to run
