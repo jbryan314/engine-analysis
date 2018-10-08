@@ -43,7 +43,7 @@ class FlowStart(Element):
         self.Pt = 0
         self.Tt = 0
         # ports
-        self.Fl_O = FluidOutputPort()
+        self.Fl_O = FluidOutputPort(self)
 
     def read_out(self):
         pass
@@ -68,7 +68,7 @@ class FlowEnd(Element):
         self.Pt = 0
         self.Tt = 0
         self.m_dot = 0
-        self.Fl_I = FluidInputPort()
+        self.Fl_I = FluidInputPort(self)
 
     def read_in(self):
         pass

@@ -10,9 +10,9 @@ class Turbine(Element):
         super().__init__()
         # attributes
         # ports
-        self.Fl_I = FluidInputPort()
-        self.Fl_O = FluidOutputPort()
-        self.Sh_I = ShaftInputPort()
+        self.Fl_I = FluidInputPort(self)
+        self.Fl_O = FluidOutputPort(self)
+        self.Sh_I = ShaftInputPort(self)
 
     def read_in(self):
         pass

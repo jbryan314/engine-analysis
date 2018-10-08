@@ -11,9 +11,9 @@ class Combustor(Element):
         # attributes
         # TODO: get important variables from Julie
         # ports
-        self.Fl_I = FluidInputPort()
-        self.Fl_O = FluidOutputPort()
-        self.Fu_I = FuelInputPort()
+        self.Fl_I = FluidInputPort(self)
+        self.Fl_O = FluidOutputPort(self)
+        self.Fu_I = FuelInputPort(self)
 
     def read_in(self):
         pass

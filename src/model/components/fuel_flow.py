@@ -10,7 +10,7 @@ class FuelStart(Element):
         super().__init__()
         # attributes
         # ports
-        self.Fu_O = FuelOutputPort()
+        self.Fu_O = FuelOutputPort(self)
 
     def read_out(self):
         pass

@@ -10,8 +10,8 @@ class Inlet(Element):
         super().__init__()
         # attributes
         # ports
-        self.Fl_I = FluidInputPort()
-        self.Fl_O = FluidOutputPort()
+        self.Fl_I = FluidInputPort(self)
+        self.Fl_O = FluidOutputPort(self)
 
     def read_in(self):
         pass

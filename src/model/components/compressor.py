@@ -21,6 +21,6 @@ class Compressor(Element):
         self.pressure_ratio = pressure_ratio
         self.efficiency = efficiency
         # ports
-        self.Fl_I = FluidInputPort()
-        self.Fl_O = FluidOutputPort()
-        self.Sh_O = ShaftOutputPort()
+        self.Fl_I = FluidInputPort(self)
+        self.Fl_O = FluidOutputPort(self)
+        self.Sh_O = ShaftOutputPort(self)
